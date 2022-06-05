@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind-cssAssignment</title>
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="./css/fontawesome/css/all.min.css">
+
+    <!-- slick css -->
+    <link rel="stylesheet" href="./vendors/slick/slick.css">
+    <link rel="stylesheet" href="./vendors/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-poppins text-gray-800  overflow-x-hidden">
+
+    <!-- Start Navbar -->
+    <nav class="bg-white shadow p-3 sticky top-0 z-50">
+        <div class="container mx-auto ">
+            <div class="flex justify-between  ">
+                <div class="flex ml-8 relative">
+                    <span class="absolute top-2 left-3">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <input type="search" class="transition w-full rounded-md text-xs p-2.5 pt-0.4 pl-10 bg-slate-100 " placeholder="Search here...">
+                    <button type="button" class="  px-2 py-1.5 -right-14 rounded-md bg-blue-500 hover:text-white hover:bg-red-300 ">search</button>
+                </div>
+
+                <div class="flex justify-center items-center pr-2">
+                    <div class="  flex justify-center items-center relative group ">
+                        <div class="">
+                            <a href="#">
+                                <img src="images/USA.png" alt="" class="w-5 h-5  cursor-pointer">
+                            </a>
+
+                        </div>
+                        <div>
+                            <a href="#" class="block bg-white">English</a>
+                        </div>
+                        <div class="collapse-button cursor-pointer ">
+                            <i class="fas fa-chevron-down text-sm"></i>
+                        </div>
+
+                    </div>
+                    <ul class="list-none">
+
+
+                        <li class="inline-block mx-3 sm:mx-4 md:mx-5 relative group">
+                            <a href="#" class="text-xl text-gray-500 group-hover:opacity-75">
+                                <span class="absolute -top-2 bg-red-500  text-white pl-1.5 text-xs -right-3 rounded-full h-4 w-4">
+                                    
+                                </span>
+                                <i class="fa-solid fa-bell"></i>
+                            </a>
+                        </li>
+                        <li class="inline-block mx-3 sm:mx-4 md:mx-5 relative group">
+                            <a href="#" class="text-xl text-gray-500 group-hover:opacity-75">
+
+                                <i class="fa-solid fa-table-cells"></i>
+                            </a>
+                        </li>
+                        <li class="inline-block mx-3 sm:mx-4 md:mx-5 relative group">
+                            <a href="#" class="text-xl text-gray-500 group-hover:opacity-75">
+
+                                <i class="fa-solid fa-gear"></i>
+                            </a>
+                        </li>
+                        <li class="inline-block mx-3 sm:mx-4 md:mx-5 relative group">
+                            <a href="signup.html" class="text-xl text-gray-500 group-hover:opacity-75">
+
+                                <i class="fa-solid fa-user-plus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="flex justify-center items-center">
+                        <div>
+                            <img src="images/piyas.jpg" alt="" class="w-5 h-5 rounded-md md:m-2 sm:mb-24 ">
+                        </div>
+                        <div>
+                            <h3 class="text-sm text-blue-400">Md.Mushfiqur Rahman</h3>
+                            <p class="text-xs text-blue-300">Founder</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- end Navbar -->
+    <!-- hero section start -->
+    <section>
+        <div class="container mx-auto">
+            <div class="bg-blue-500 justify-center text-center text-5xl py-10 pt-2 ">
+                <a href="index.html">
+                    <h3>HYPER</h3>
+                    <p class="text-xs cursor-pointer text-white">click me</p>
+                </a>
+
+            </div>
+            <div class="md:flex sm:grid-cols-1  basis-1/2">
+                <div class="text-md text-bold text-black  ">
+                    <label class="" for="">Enter Name </label>
+                    <div>
+                        <input class="  appearance-none border-2 border-gray-200 rounded w-fit py-2 px-36 text-gray-700 leading-tight focus:outline-none focus:bg-slate-100 focus:border-emerald-400" id="inline-full-name" type="text" placeholder="please enter your name">
+
+                    </div>
+                    <label class="" for="">Overview </label>
+                    <div>
+                        <textarea class="border py-4 px-10" rows="4" cols="50" name="comment" form="usrform" placeholder="Enter Some brief about project">
+                              </textarea>
+
+                    </div>
+                    <label class="" for="">Start Date </label>
+                    <div>
+                        <input class="  appearance-none border-2 border-gray-200 rounded w-fit py-2 px-44 text-gray-700 leading-tight focus:outline-none focus:bg-slate-100 focus:border-emerald-400" id="inline-full-name" type="date" placeholder="please enter your name">
+
+                    </div>
+                    <label class="" for="">Budget </label>
+                    <div>
+                        <input class="  appearance-none border-2 border-gray-200 rounded w-fit py-2 px-40 text-gray-700 leading-tight focus:outline-none focus:bg-slate-100 focus:border-emerald-400" id="inline-full-name" type="text" placeholder="Enter project budget">
+
+                    </div>
+
+                    <label for="members" class="block mb-2 text-sm font-medium text-black ">Select members</label>
+                    <div>
+                        <select id="members" class="bg-gray-50 border border-gray-300 w-fit py-2 px-44">
+                            <option selected="">Choose member</option>
+                            <option value="pi">piyas</option>
+                            <option value="ar">arman</option>
+                            <option value="pa">pavel</option>
+                            <option value="zi">zahid</option>
+                            </select>
+                    </div>
+
+                </div>
+
+                <div class="grid justify-center items-center text-center pl-40 ">
+
+                    <div>
+                        <h3>Avatar</h3>
+                        <p>Recommended thumbnail size 800x400 (px).</p>
+                    </div>
+                    <div>
+
+                        <div class="flex justify-center items-center w-full">
+                            <label for="dropzone-file" class="flex flex-col justify-center items-center w-full h-40 bg-gray-50 rounded-lg border-2 border-gray-300 border-dashed cursor-pointer ">
+                  <div class="flex flex-col justify-center items-center pt-5 pb-6">
+                          <svg class="mb-3 w-10 h-10 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+                   <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Drops files here OR click to Upload</span> </p>
+                    
+                <input id="dropzone-file" type="file" class="hidden">
+                       </label>
+                        </div>
+
+
+                    </div>
+                    <div class="pt-5">
+                        <label class="pr-96 " for="">End Date </label>
+                        <div>
+                            <input class="  appearance-none border-2 border-gray-200 rounded w-fit py-2 px-44 text-gray-700 leading-tight focus:outline-none focus:bg-slate-100 focus:border-emerald-400" id="inline-full-name" type="date" placeholder="please enter your name">
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <!-- hero section start -->
+
+
+
+
+
+    <!-- footer section start -->
+    <section>
+        <footer class="bg-slate-200 text-black mt-16 pt-6 py-12">
+            <div class="container mx-auto ">
+                <div class="flex justify-between items-center  flex-col md:flex-row ">
+                    <div class="text-center mt-1">
+                        &copy; 2022 All Rights Reserved.
+                    </div>
+                    <div>
+                        <a href="#">ABOUT</a>
+                        <a href="#">Support</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+    </section>
+
+    <!-- footer section end -->
+
+
+    <!-- Required chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./vendors/jquery/jquery-3.6.0.min.js"></script>
+
+    <script src="./js/main.js"></script>
+
+    <!-- slick js -->
+    <script src="./vendors/slick/slick.min.js"></script>
+
+
+
+
+</body>
+
+</html>
